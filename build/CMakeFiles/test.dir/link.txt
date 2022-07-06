@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/test.dir/rtl_test.c.o CMakeFiles/test.dir/convenience/convenience.c.o -o test  src/librtlsdr_static.a -lm -lusb-1.0 
