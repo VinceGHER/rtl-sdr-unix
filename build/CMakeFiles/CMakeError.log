@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/vincent/rtl-sdr/rtl-sdr-unix/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_4a41c/fast && /usr/bin/make  -f CMakeFiles/cmTC_4a41c.dir/build.make CMakeFiles/cmTC_4a41c.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_73457/fast && /usr/bin/make  -f CMakeFiles/cmTC_73457.dir/build.make CMakeFiles/cmTC_73457.dir/build
 make[1]: Entering directory '/home/vincent/rtl-sdr/rtl-sdr-unix/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4a41c.dir/src.c.o
-/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_4a41c.dir/src.c.o -c /home/vincent/rtl-sdr/rtl-sdr-unix/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_4a41c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a41c.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_4a41c.dir/src.c.o -o cmTC_4a41c 
-/usr/bin/ld: CMakeFiles/cmTC_4a41c.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_73457.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_73457.dir/src.c.o -c /home/vincent/rtl-sdr/rtl-sdr-unix/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_73457
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73457.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_73457.dir/src.c.o -o cmTC_73457 
+/usr/bin/ld: CMakeFiles/cmTC_73457.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
 /usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_4a41c.dir/build.make:99: cmTC_4a41c] Error 1
+make[1]: *** [CMakeFiles/cmTC_73457.dir/build.make:99: cmTC_73457] Error 1
 make[1]: Leaving directory '/home/vincent/rtl-sdr/rtl-sdr-unix/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:127: cmTC_4a41c/fast] Error 2
+make: *** [Makefile:127: cmTC_73457/fast] Error 2
 
 
 Source file was:
@@ -43,18 +43,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/vincent/rtl-sdr/rtl-sdr-unix/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_e494f/fast && /usr/bin/make  -f CMakeFiles/cmTC_e494f.dir/build.make CMakeFiles/cmTC_e494f.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a627d/fast && /usr/bin/make  -f CMakeFiles/cmTC_a627d.dir/build.make CMakeFiles/cmTC_a627d.dir/build
 make[1]: Entering directory '/home/vincent/rtl-sdr/rtl-sdr-unix/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e494f.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_e494f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.23/Modules/CheckFunctionExists.c
-Linking C executable cmTC_e494f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e494f.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_e494f.dir/CheckFunctionExists.c.o -o cmTC_e494f  -lpthreads 
+Building C object CMakeFiles/cmTC_a627d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_a627d.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a627d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a627d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_a627d.dir/CheckFunctionExists.c.o -o cmTC_a627d  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_e494f.dir/build.make:99: cmTC_e494f] Error 1
+make[1]: *** [CMakeFiles/cmTC_a627d.dir/build.make:99: cmTC_a627d] Error 1
 make[1]: Leaving directory '/home/vincent/rtl-sdr/rtl-sdr-unix/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:127: cmTC_e494f/fast] Error 2
+make: *** [Makefile:127: cmTC_a627d/fast] Error 2
 
 
 
