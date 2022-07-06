@@ -1,6 +1,0 @@
-/home/vincent/rtl-sdr/rtl-sdr-unix/build/CMakeFiles/test.dir
-/home/vincent/rtl-sdr/rtl-sdr-unix/build/CMakeFiles/edit_cache.dir
-/home/vincent/rtl-sdr/rtl-sdr-unix/build/CMakeFiles/rebuild_cache.dir
-/home/vincent/rtl-sdr/rtl-sdr-unix/build/src/CMakeFiles/rtlsdr_static.dir
-/home/vincent/rtl-sdr/rtl-sdr-unix/build/src/CMakeFiles/edit_cache.dir
-/home/vincent/rtl-sdr/rtl-sdr-unix/build/src/CMakeFiles/rebuild_cache.dir
