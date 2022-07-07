@@ -1,8 +1,11 @@
 cmake_minimum_required(VERSION 3.7.2)
 project(test VERSION 1.0.1 DESCRIPTION "test description")
-
+include(GNUInstallDirs)
 add_subdirectory(src)
-
+target_include_directories(rtlsdr_static
+	PUBLIC
+		$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+		$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 # add_executable(test rtl_test.c convenience/convenience.c)
 # target_link_libraries(test PUBLIC rtlsdr_static m)
 
