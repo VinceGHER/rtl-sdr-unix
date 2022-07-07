@@ -20,8 +20,8 @@
 ########################################################################
 # Install public header files
 ########################################################################
-install(FILES
-    rtl-sdr.h
-    rtl-sdr_export.h
-    DESTINATION include
-)
+# install(FILES
+#     rtl-sdr.h
+#     rtl-sdr_export.h
+#     DESTINATION include
+# )
