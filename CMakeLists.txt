@@ -26,4 +26,4 @@ install(TARGETS rtlsdr_static EXPORT rtlsdr-targets)
 install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 install(EXPORT rtlsdr-targets
 NAMESPACE rtlsdr::
-DESTINATION ${CMAKE_INSTALL_DATADIR}/rtlsdr)
+DESTINATION ${CMAKE_INSTALL_DATADIR}/rtl-sdr-unix)
