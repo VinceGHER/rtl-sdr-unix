@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.7.2)
 
-set(rtl-sdr-unix_VERSION 1.0.0)
+set(rtl_VERSION 1.0.0)
 
-project(test VERSION rtl-sdr-unix_VERSION DESCRIPTION "test description")
+project(test VERSION rtl_VERSION DESCRIPTION "test description")
 include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 add_subdirectory(src)
@@ -31,7 +31,7 @@ configure_package_config_file(cmake/config.cmake.in
 	NO_SET_AND_CHECK_MACRO)
 write_basic_package_version_file(
 	${CMAKE_CURRENT_BINARY_DIR}/rtl-sdr-unix-config-version.cmake
-	VERSION ${rtl-sdr-unix_VERSION}
+	VERSION ${rtl_VERSION}
 	COMPATIBILITY SameMajorVersion)
 install(
 	FILES
