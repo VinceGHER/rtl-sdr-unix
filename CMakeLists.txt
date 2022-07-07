@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.7.2)
-project(test VERSION 1.0.1 DESCRIPTION "test description")
+
+set(rtl-sdr-unix_VERSION 1.0.0)
+
+project(test VERSION rtl-sdr-unix_VERSION DESCRIPTION "test description")
 include(GNUInstallDirs)
+include(CMakePackageConfigHelpers)
 add_subdirectory(src)
 target_include_directories(rtlsdr_static
 	PUBLIC
@@ -21,7 +25,20 @@ target_include_directories(rtlsdr_static
 #         ${CMAKE_CURRENT_BINARY_DIR}/beison-config-version.cmake
 #     DESTINATION
 #         ${CMAKE_INSTALL_DATADIR}/beison)
-
+configure_package_config_file(cmake/config.cmake.in
+	${CMAKE_CURRENT_BINARY_DIR}/rtl-sdr-unix-config.cmake
+	INSTALL_DESTINATION ${CMAKE_INSTALL_DATADIR}/rtl-sdr-unix
+	NO_SET_AND_CHECK_MACRO)
+write_basic_package_version_file(
+	${CMAKE_CURRENT_BINARY_DIR}/rtl-sdr-unix-config-version.cmake
+	VERSION ${rtl-sdr-unix_VERSION}
+	COMPATIBILITY SameMajorVersion)
+install(
+	FILES
+		${CMAKE_CURRENT_BINARY_DIR}/rtl-sdr-unix-config.cmake
+		${CMAKE_CURRENT_BINARY_DIR}/rtl-sdr-unix-config-version.cmake
+	DESTINATION
+		${CMAKE_INSTALL_DATADIR}/rtl-sdr-unix)
 install(TARGETS rtlsdr_static EXPORT rtlsdr-targets)
 install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 install(EXPORT rtlsdr-targets
